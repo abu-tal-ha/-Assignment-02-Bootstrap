@@ -1,0 +1,157 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+
+
+/* some img  */
+  .custom-card {
+    position: relative;
+    width: calc(20% - 8px);
+    cursor: pointer;
+
+  }
+  
+  @media (max-width: 768px) {
+    .custom-card {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .custom-card {
+      width: 100%;
+    }
+  }
+  
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.3s ease;
+    font-weight: 400;
+  }
+  
+  .category-card:hover .overlay-text {
+    opacity: 1;
+  }
+
+
+
+
+  /* advetise section is start */
+  .advertise-section {
+    position: relative;
+    overflow: hidden;
+  }
+  .advertise-img {
+    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .advertise-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  .advertise-overlay div {
+    flex: 1;
+    margin-right: 1rem;
+  }
+  .advertise-overlay p {
+    margin-left: 0;
+  }
+  .advertise-btn {
+    background-color: #F08F64;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+  }
+  .advertise-btn:hover {
+    background-color: #e25807;
+  }
+
+
+
+
+
+
+
+
+
+
+/* editorial team section is start */
+  .team-section {
+    padding: 2rem 0;
+    margin-top: 150px;
+  }
+  .team-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  .team-card:hover .team-img {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .team-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  .team-info {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .team-card:hover .team-info {
+    opacity: 1;
+  }
+
+
+
+
+
+  /* podcast section is start */
+  .podcast {
+    font-weight: 500;
+    font-size: 38px;
+  }
+
+  .minute {
+    background-color: #F08F64;
+    text-decoration-line: underline;
+  }
+  .iconli {
+    cursor: pointer;
+  }
